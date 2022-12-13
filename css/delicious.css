@@ -28,6 +28,7 @@
 .nav-sec {
 	background-color:#000000;
 	opacity:0.9;
+	padding:15px;
 	position:sticky;
 	top:0;
 	z-index:1;
@@ -54,10 +55,10 @@
 	text-decoration:none;
 	color:#ffffff;
 	background-color:#ff9900;
-	border-radius:5px;
+	border-radius:15px;
 }
 #banner-sec {
-	background:linear-gradient(#00000073,#00000047), url("img/banner.jpg");
+	background:linear-gradient(#00000073,#00000047), url("img/slide/slide-2.jpg");
 	background-position:center;
 }
 .banner-container {
@@ -110,11 +111,22 @@
 	max-width:100%;
 }
 .img-icon {
-	font-size:60px;
-	color:#ff9900;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background-color:#ff9900;
+	background:radial-gradient(#ff9900 50%,rgba(255,180,10,0.4)50%);
+	font-size:35px;
+	color:#ffffff;
 	position:absolute;
-	top:125%;
+	top:117%;
 	left:20%;
+}
+.img-icon:hover{
+	cursor:pointer;
 }
 .about-para {
 	padding:10px;
@@ -145,7 +157,7 @@
 }
 .choice-col {
 	margin:5%;
-	box-shadow:3px 3px 9px 9px #ddd;
+	box-shadow:2px 2px 6px 6px #ddd;
 	background-color:#ffffff;
 	padding:10px;
 	text-align:left;
@@ -223,6 +235,7 @@ background-color:#f2f2f2;
 	color:#ddd;
 }
 #specials-sec {
+	margin-bottom:30px;
 }
 
 .specials-container {
@@ -233,6 +246,9 @@ background-color:#f2f2f2;
 	padding:50px;
 	margin-bottom:20px;
 	text-align:center;
+}
+.specials-col1-h1 span {
+	color:#ff9900;
 }
 .specials-row2 {
 	display:flex;
@@ -286,7 +302,7 @@ background-color:#f2f2f2;
 .events-span {
 	color:#ff9900;
 }
-.events-row {
+.events-row1 {
 	display:flex;
 }
 .events-col {
@@ -355,10 +371,13 @@ background-color:#f2f2f2;
 	background-color:#ff9900;
 	border:1px solid #ff9900;
 	color:#fff;
-	border-radius:20px;
-	
+	border-radius:20px;	
 }
-
+.form-col button:hover {
+	cursor:pointer;
+	background-color:#ffad33;
+	border:1px solid #ffad33;
+}
 
 #gallery-sec {
 }
@@ -400,6 +419,7 @@ background-color:#f2f2f2;
 	background-position:center;
 	color:#000000;
 	background-attachment:fixed;
+	margin-bottom:20px;
 }
 .chefs-container {
 	width:100%;
@@ -434,7 +454,8 @@ background-color:#f2f2f2;
 	position:absolute;
 	background-color:#ffffff;
 	border-radius:5px;
-	box-shadow:1px 1px 3px 3px #b3b3b3;
+	box-shadow:1px 1px 3px 3px #b3b3b345;
+	opacity:0.95;
 	color:#666666;
 	top:77%;
 	left:12%;
@@ -460,19 +481,23 @@ background-color:#f2f2f2;
 .review-sec {
 	background:linear-gradient(#00000073,#00000047), url("img/testimonials-bg.jpg");
 	background-position:center;
+	margin-bottom:30px;
 }
 .review-container {
 	width:90%;
 	margin:auto;
 }
-.review-row {
-	display:flex;
-	flex-direction:column;
+.review-row1 {
 }
 .review-col{
+	margin:20px;
 	padding:30px;
 	color:#ffffff;
 	text-align:center;
+}
+.review-col1 {
+	display:flex;
+	justify-content:center;
 }
 .review-col1 img{
 	max-width:10%;
@@ -485,6 +510,9 @@ background-color:#f2f2f2;
 .review-col5 i{
 	color:#bfbfbf;
 	font-size:20px;
+}
+.review-col h1,h5 {
+	padding:15px;
 }
 
 #contact-sec {
@@ -568,7 +596,11 @@ background-color:#f2f2f2;
 	border:1px solid #ff9900;
 	color:#fff;
 	border-radius:20px;
-	
+}
+.contact-form button:hover{
+	cursor:pointer;
+	background-color:#ffad33;
+	border:1px solid #ffad33;
 }
 #contact-name{
 	width:45%;
